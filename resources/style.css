@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+.montserrat-montsfont {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@keyframes main-anim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+h1 {
+    font-family: Montserrat;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 34.5%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    transition: color 0.5s;
+    animation-name: main-anim;
+    animation-duration: 0.5s;
+}
+
+.voltcontainer {
+    width: 35%;
+    height: 100px;
+    position: absolute ;
+    top: 45%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    gap: 15px;
+    animation-name: main-anim;
+    animation-duration: 0.5s;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0);
+    transition: box-shadow 0.5s;
+}
+
+.volttext {
+    display: none;
+    color: white;
+    font-size: 18px;
+    animation-name: main-anim;
+    animation-duration: 0.5s;
+    font-family: montserrat;
+    position: absolute;
+    top: 54%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+a.voltbutton {
+    background-color: #000000;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.7s, box-shadow 0.3s, transform 0.4s;
+}
+
+a.voltbutton:hover {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0);
+    transform: translate(0%, -10%);
+}
+
+a.voltbutton:active {
+    background-color: black;
+}
+
+a.voltbutton svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+h1:hover {
+    color: red;
+}
+
+.voltcontainer:hover {
+    box-shadow: 20px 18px 8px rgba(0, 0, 0);
+}

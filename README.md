@@ -1,4 +1,4 @@
-# Simple and beautiful new tab page for you browser!
+# just a cool looking new tab page
 feel free to customize.
 thanks to particles.js.
 you can test it here: https://voltageeee.github.io/cool-new-tab/
